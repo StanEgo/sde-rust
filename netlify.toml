@@ -1,4 +1,4 @@
 [build]
 base = "docs/"
-publish = "docs/out/"
+publish = "out/"
 command = "yarn docs:publish" 
