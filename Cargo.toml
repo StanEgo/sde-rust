@@ -1,13 +1,6 @@
-[package]
-name = "sde"
-version = "0.0.1"
-authors = ["stan <stanislav@yarmonov.pro>"]
-edition = "2018"
-
-[[bin]]
-name = "sandbox"
-path = "sandbox/main.rs"
-
-[dependencies]
-sde-specs = { path = "./crates/specs" }
-sde-frames = { path = "./crates/frames" }
+[workspace]
+members = [
+    "crates/specs",
+    "crates/frames",
+    "crates/security"
+]

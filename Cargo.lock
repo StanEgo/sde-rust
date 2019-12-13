@@ -17,15 +17,11 @@ dependencies = [
 ]
 
 [[package]]
-name = "sde"
+name = "sde-frames"
 version = "0.0.1"
-dependencies = [
- "sde-frames 0.0.1",
- "sde-specs 0.0.1",
-]
 
 [[package]]
-name = "sde-frames"
+name = "sde-security"
 version = "0.0.1"
 
 [[package]]
