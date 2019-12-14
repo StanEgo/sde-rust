@@ -1,7 +1,4 @@
 [workspace]
 members = [
-    "crates/specs",
-    "crates/frames",
-    "crates/security",
-	"crates/cli"
+    "crates/*"
 ]

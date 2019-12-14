@@ -5,7 +5,3 @@ authors = ["stan <stanislav@yarmonov.pro>"]
 edition = "2018"
 
 [dependencies]
-sde-frames = { path = "../frames" }
-sde-specs = { path = "../specs" }
-syn = { version = "1.0.11", features = ["full", "extra-traits"] }
-proc-macro2 = "1.0.6"

@@ -3,12 +3,6 @@
 [[package]]
 name = "cli"
 version = "0.0.1"
-dependencies = [
- "proc-macro2 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
- "sde-frames 0.0.1",
- "sde-specs 0.0.1",
- "syn 1.0.11 (registry+https://github.com/rust-lang/crates.io-index)",
-]
 
 [[package]]
 name = "proc-macro2"
@@ -29,6 +23,16 @@ dependencies = [
 [[package]]
 name = "sde-frames"
 version = "0.0.1"
+
+[[package]]
+name = "sde-sandbox"
+version = "0.0.1"
+dependencies = [
+ "proc-macro2 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sde-frames 0.0.1",
+ "sde-specs 0.0.1",
+ "syn 1.0.11 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "sde-security"
