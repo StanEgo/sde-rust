@@ -1,3 +1,5 @@
+const VERSION: &'static str = env!("CARGO_PKG_VERSION");
+
 fn main() {
-    println!("CLI");
+    println!("SDE CLI v{}", VERSION);
 }
