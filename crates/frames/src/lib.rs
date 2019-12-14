@@ -1,4 +1,10 @@
-// WORK: Remove
+pub trait Schema {
+    fn to_schema();
+}
+
+/*
+TODO:0
+
 #[cfg(test)]
 mod tests {
     #[test]
@@ -8,13 +14,14 @@ mod tests {
 }
 
 //WORK: Sort out
-    pub struct Timestamp(u64);
+pub struct Timestamp(u64);
 
-    pub trait Id<T> {
-        fn id() -> T;
-    }
+pub trait Id<T> {
+    fn id() -> T;
+}
 
-    pub trait Lifetime {
-        fn start() -> Timestamp;
-        fn finish() -> Option<Timestamp>;
-    }
+pub trait Lifetime {
+    fn start() -> Timestamp;
+    fn finish() -> Option<Timestamp>;
+}
+*/

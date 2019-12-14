@@ -8,5 +8,6 @@ edition = "2018"
 proc-macro = true
 
 [dependencies]
+sde-frames = { path = "../frames" }
 syn = "1.0.11"
 quote = "1.0.2"
