@@ -5,7 +5,7 @@
     "tasks": [
         {
             "type": "cargo",
-            "subcommand": "build",
+            "subcommand": "run",
             "problemMatcher": [
                 "$rustc"
             ],

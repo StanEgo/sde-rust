@@ -32,14 +32,6 @@ pub fn to_schema_derive(input: TokenStream) -> TokenStream {
 /*TODO:0
 
 // WORK: Remove
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
-
 mod keyword {
     syn::custom_keyword!(Feature);
     syn::custom_keyword!(Given);
