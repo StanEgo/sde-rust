@@ -2,7 +2,6 @@ extern crate proc_macro;
 
 use sde_frames::Schema;
 use sde_specs::Schema;
-use syn::parse::{ Result, Parse, ParseStream };
 
 #[derive(Schema)]
 pub struct Point {
