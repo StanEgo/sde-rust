@@ -2,5 +2,6 @@
 members = [
     "crates/specs",
     "crates/frames",
-    "crates/security"
+    "crates/security",
+	"crates/cli"
 ]
