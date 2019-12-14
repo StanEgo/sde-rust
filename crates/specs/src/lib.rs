@@ -1,30 +1,13 @@
-extern crate proc_macro;
-
-use proc_macro::TokenStream;
-use quote::quote;
-use syn::{ parse_macro_input, Ident };
-use syn::parse::{ Result, Parse, ParseStream };
-
-fn impl_to_schema(ast: &syn::DeriveInput) -> TokenStream {
-    let name = &ast.ident;
-
-    let gen = quote! {
-        impl Schema for #name {
-            fn to_schema() {
-                println!("Schema for {}", stringify!(#name));
-            }
-        }
-    };
-
-    gen.into()
+pub trait Schema {
+    fn to_schema();
 }
 
-#[proc_macro_derive(Schema)]
-pub fn to_schema_derive(input: TokenStream) -> TokenStream {
-    // Construct a representation of Rust code as a syntax tree
-    // that we can manipulate
-    let ast = syn::parse(input).unwrap();
+pub struct SchemaProperty {
+    pub name: String,
+    pub kind: String,
+}
 
-    // Build the trait implementation
-    impl_to_schema(&ast)
+pub struct SchemaNode {
+    pub name: String,
+    pub props: std::vec::Vec<SchemaProperty>,
 }

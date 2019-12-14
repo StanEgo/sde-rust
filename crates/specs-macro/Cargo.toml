@@ -1,8 +1,14 @@
 [package]
-name = "sde-specs"
+name = "sde-specs-macro"
 version = "0.0.1"
 authors = ["stan <stanislav@yarmonov.pro>"]
 edition = "2018"
 
+[lib]
+proc-macro = true
+
 [dependencies]
 sde-frames = { path = "../frames" }
+sde-specs = { path = "../specs/" }
+syn = "1.0.11"
+quote = "1.0.2"

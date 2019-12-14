@@ -1,7 +1,7 @@
 extern crate proc_macro;
 
-use sde_frames::Schema;
 use sde_specs::Schema;
+use sde_specs_macro::Schema;
 
 #[derive(Schema)]
 pub struct Point {

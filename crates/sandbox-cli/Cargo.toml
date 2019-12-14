@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 sde-frames = { path = "../frames" }
 sde-specs = { path = "../specs" }
+sde-specs-macro = { path = "../specs-macro" }
 sde-sandbox-macro = { path = "../sandbox-macro" }
 syn = { version = "1.0.11", features = ["full", "extra-traits"] }
 proc-macro2 = "1.0.6"
