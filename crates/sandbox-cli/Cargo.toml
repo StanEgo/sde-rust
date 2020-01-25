@@ -5,7 +5,6 @@ authors = ["stan <stanislav@yarmonov.pro>"]
 edition = "2018"
 
 [dependencies]
-sde-frames = { path = "../frames" }
 sde-specs = { path = "../specs" }
 sde-specs-macro = { path = "../specs-macro" }
 sde-sandbox-macro = { path = "../sandbox-macro" }
