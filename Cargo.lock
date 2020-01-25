@@ -17,6 +17,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "sde-audio"
+version = "0.0.1"
+
+[[package]]
 name = "sde-cli"
 version = "0.0.1"
 
