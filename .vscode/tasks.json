@@ -21,6 +21,21 @@
             "presentation": {
                 "clear": true
             }
+        },
+        {
+            "label": "Build docs",
+            "command": "cargo",
+            "args": [
+                "doc",
+                "--no-deps",
+                "--open"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "presentation": {
+                "clear": true
+            }
         }
     ]
 }
